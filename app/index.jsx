@@ -1,8 +1,14 @@
 import { StyleSheet, View, FlatList } from "react-native";
 import exercises from "../assets/data/exercises.json";
 import ExerciseListItem from "../src/components/ExerciseListItem";
+import { useQuery } from "@tanstack/react-query";
 
-export default function App() {
+
+export default function ExercisesScreen() {
+  const {data} = useQuery({
+
+  })
+
   return (
     <View style={styles.container}>
     <FlatList 
